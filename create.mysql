@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: pydio
 -- ------------------------------------------------------
--- Server version	5.5.52-0+deb8u1
+-- Server version	5.5.52-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -205,7 +205,7 @@ CREATE TABLE `ajxp_log` (
   KEY `severity` (`severity`),
   KEY `dirname` (`dirname`),
   KEY `basename` (`basename`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -298,7 +298,7 @@ CREATE TABLE `ajxp_plugin_configs` (
 
 LOCK TABLES `ajxp_plugin_configs` WRITE;
 /*!40000 ALTER TABLE `ajxp_plugin_configs` DISABLE KEYS */;
-INSERT INTO `ajxp_plugin_configs` VALUES ('core.ajaxplorer','a:2:{s:17:\"APPLICATION_TITLE\";s:16:\"Pydio Enterprise\";s:16:\"DEFAULT_LANGUAGE\";s:2:\"fr\";}'),('core.log','a:1:{s:22:\"UNIQUE_PLUGIN_INSTANCE\";a:3:{s:13:\"instance_name\";s:7:\"log.sql\";s:18:\"group_switch_value\";s:7:\"log.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}}'),('core.mailer','a:1:{s:4:\"FROM\";s:15:\"admin@veone.net\";}'),('core.mq','a:1:{s:18:\"UNIQUE_MS_INSTANCE\";a:3:{s:13:\"instance_name\";s:6:\"mq.sql\";s:18:\"group_switch_value\";s:6:\"mq.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}}'),('core.notifications','a:2:{s:11:\"USER_EVENTS\";b:1;s:20:\"UNIQUE_FEED_INSTANCE\";a:3:{s:13:\"instance_name\";s:8:\"feed.sql\";s:18:\"group_switch_value\";s:8:\"feed.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}}'),('gui.ajax','a:1:{s:22:\"CUSTOM_WELCOME_MESSAGE\";s:32:\"My Company File Sharing Platform\";}'),('mailer.phpmailer-lite','a:1:{s:6:\"MAILER\";s:8:\"sendmail\";}');
+INSERT INTO `ajxp_plugin_configs` VALUES ('core.ajaxplorer','a:2:{s:17:\"APPLICATION_TITLE\";s:20:\"MTN Drive | Plateforme de partage et de stockage en ligne\";s:16:\"DEFAULT_LANGUAGE\";s:2:\"fr\";}'),('core.log','a:1:{s:22:\"UNIQUE_PLUGIN_INSTANCE\";a:3:{s:13:\"instance_name\";s:7:\"log.sql\";s:18:\"group_switch_value\";s:7:\"log.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}}'),('core.mq','a:1:{s:18:\"UNIQUE_MS_INSTANCE\";a:3:{s:13:\"instance_name\";s:6:\"mq.sql\";s:18:\"group_switch_value\";s:6:\"mq.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}}'),('core.notifications','a:2:{s:20:\"UNIQUE_FEED_INSTANCE\";a:3:{s:13:\"instance_name\";s:8:\"feed.sql\";s:18:\"group_switch_value\";s:8:\"feed.sql\";s:10:\"SQL_DRIVER\";a:2:{s:11:\"core_driver\";s:4:\"core\";s:18:\"group_switch_value\";s:4:\"core\";}}s:11:\"USER_EVENTS\";b:1;}'),('gui.ajax','a:1:{s:22:\"CUSTOM_WELCOME_MESSAGE\";s:36:\"MTN Drive Entreprise\";}');
 /*!40000 ALTER TABLE `ajxp_plugin_configs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -386,7 +386,7 @@ CREATE TABLE `ajxp_roles` (
 
 LOCK TABLES `ajxp_roles` WRITE;
 /*!40000 ALTER TABLE `ajxp_roles` DISABLE KEYS */;
-INSERT INTO `ajxp_roles` VALUES ('AJXP_GRP_/','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:10:\"AJXP_GRP_/\";s:7:\"\0*\0acls\";a:4:{i:1;s:2:\"rw\";s:9:\"ajxp_user\";s:2:\"rw\";s:9:\"ajxp_home\";s:2:\"rw\";s:5:\"inbox\";s:2:\"rw\";}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:3:{s:9:\"core.conf\";a:3:{s:17:\"ROLE_DISPLAY_NAME\";s:10:\"Root Group\";s:19:\"ROLE_FORCE_OVERRIDE\";s:5:\"false\";s:24:\"DEFAULT_START_REPOSITORY\";s:9:\"ajxp_home\";}s:11:\"core.mailer\";a:4:{s:23:\"NOTIFICATIONS_EMAIL_GET\";s:4:\"true\";s:29:\"NOTIFICATIONS_EMAIL_FREQUENCY\";s:1:\"M\";s:34:\"NOTIFICATIONS_EMAIL_FREQUENCY_USER\";s:1:\"5\";s:29:\"NOTIFICATIONS_EMAIL_SEND_HTML\";s:4:\"true\";}s:13:\"meta.syncable\";a:1:{s:13:\"REPO_SYNCABLE\";s:4:\"true\";}}}s:10:\"\0*\0actions\";a:0:{}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475708301),('AJXP_USR_/admin@veone.net','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:25:\"AJXP_USR_/admin@veone.net\";s:7:\"\0*\0acls\";a:7:{i:0;s:2:\"rw\";i:1;s:2:\"rw\";s:9:\"ajxp_user\";s:2:\"rw\";s:9:\"ajxp_home\";s:2:\"rw\";s:5:\"inbox\";s:2:\"rw\";s:9:\"ajxp_conf\";s:2:\"rw\";s:11:\"fs_template\";s:2:\"rw\";}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:2:{s:5:\"email\";s:15:\"admin@veone.net\";s:17:\"USER_DISPLAY_NAME\";s:14:\"administrateur\";}}}s:10:\"\0*\0actions\";a:0:{}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:1475708292;}',1475708292),('GUEST','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:5:\"GUEST\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:15:\"Guest user role\";}}}s:10:\"\0*\0actions\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:3:{s:9:\"access.fs\";a:1:{s:5:\"purge\";s:8:\"disabled\";}s:10:\"meta.watch\";a:1:{s:12:\"toggle_watch\";s:8:\"disabled\";}s:12:\"index.lucene\";a:1:{s:5:\"index\";s:8:\"disabled\";}}}s:14:\"\0*\0autoApplies\";a:1:{i:0;s:5:\"guest\";}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475708301),('MINISITE','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:8:\"MINISITE\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:14:\"Minisite Users\";}}}s:10:\"\0*\0actions\";a:1:{s:22:\"AJXP_REPO_SCOPE_SHARED\";a:9:{s:9:\"access.fs\";a:3:{s:9:\"ajxp_link\";b:0;s:5:\"chmod\";b:0;s:5:\"purge\";b:0;}s:10:\"meta.watch\";a:1:{s:12:\"toggle_watch\";b:0;}s:11:\"conf.serial\";a:1:{s:13:\"get_bookmarks\";b:0;}s:8:\"conf.sql\";a:1:{s:13:\"get_bookmarks\";b:0;}s:12:\"index.lucene\";a:1:{s:5:\"index\";b:0;}s:12:\"action.share\";a:6:{s:5:\"share\";b:0;s:17:\"share-edit-shared\";b:0;s:22:\"share-folder-workspace\";b:0;s:19:\"share-file-minisite\";b:0;s:24:\"share-selection-minisite\";b:0;s:28:\"share-folder-minisite-public\";b:0;}s:8:\"gui.ajax\";a:1:{s:8:\"bookmark\";b:0;}s:11:\"auth.serial\";a:1:{s:11:\"pass_change\";b:0;}s:8:\"auth.sql\";a:1:{s:11:\"pass_change\";b:0;}}}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475708301),('MINISITE_NODOWNLOAD','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:19:\"MINISITE_NODOWNLOAD\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:28:\"Minisite Users - No Download\";}}}s:10:\"\0*\0actions\";a:1:{s:22:\"AJXP_REPO_SCOPE_SHARED\";a:1:{s:9:\"access.fs\";a:4:{s:8:\"download\";b:0;s:14:\"download_chunk\";b:0;s:16:\"prepare_chunk_dl\";b:0;s:12:\"download_all\";b:0;}}}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475708301);
+INSERT INTO `ajxp_roles` VALUES ('AJXP_GRP_/','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:10:\"AJXP_GRP_/\";s:7:\"\0*\0acls\";a:4:{i:1;s:2:\"rw\";s:9:\"ajxp_user\";s:2:\"rw\";s:9:\"ajxp_home\";s:2:\"rw\";s:5:\"inbox\";s:2:\"rw\";}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:3:{s:9:\"core.conf\";a:3:{s:17:\"ROLE_DISPLAY_NAME\";s:10:\"Root Group\";s:19:\"ROLE_FORCE_OVERRIDE\";s:5:\"false\";s:24:\"DEFAULT_START_REPOSITORY\";s:9:\"ajxp_home\";}s:13:\"meta.syncable\";a:1:{s:13:\"REPO_SYNCABLE\";s:4:\"true\";}s:11:\"core.mailer\";a:4:{s:23:\"NOTIFICATIONS_EMAIL_GET\";s:4:\"true\";s:29:\"NOTIFICATIONS_EMAIL_FREQUENCY\";s:1:\"M\";s:34:\"NOTIFICATIONS_EMAIL_FREQUENCY_USER\";s:1:\"5\";s:29:\"NOTIFICATIONS_EMAIL_SEND_HTML\";s:4:\"true\";}}}s:10:\"\0*\0actions\";a:0:{}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475809087),('AJXP_USR_/admin@veone.net','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:25:\"AJXP_USR_/admin@veone.net\";s:7:\"\0*\0acls\";a:7:{i:0;s:2:\"rw\";i:1;s:2:\"rw\";s:9:\"ajxp_user\";s:2:\"rw\";s:9:\"ajxp_home\";s:2:\"rw\";s:5:\"inbox\";s:2:\"rw\";s:9:\"ajxp_conf\";s:2:\"rw\";s:11:\"fs_template\";s:2:\"rw\";}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:2:{s:5:\"email\";s:15:\"admin@veone.net\";s:17:\"USER_DISPLAY_NAME\";s:14:\"Administrateur\";}}}s:10:\"\0*\0actions\";a:0:{}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:1475809077;}',1475809077),('GUEST','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:5:\"GUEST\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:15:\"Guest user role\";}}}s:10:\"\0*\0actions\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:3:{s:9:\"access.fs\";a:1:{s:5:\"purge\";s:8:\"disabled\";}s:10:\"meta.watch\";a:1:{s:12:\"toggle_watch\";s:8:\"disabled\";}s:12:\"index.lucene\";a:1:{s:5:\"index\";s:8:\"disabled\";}}}s:14:\"\0*\0autoApplies\";a:1:{i:0;s:5:\"guest\";}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475809087),('MINISITE','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:8:\"MINISITE\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:14:\"Minisite Users\";}}}s:10:\"\0*\0actions\";a:1:{s:22:\"AJXP_REPO_SCOPE_SHARED\";a:9:{s:9:\"access.fs\";a:3:{s:9:\"ajxp_link\";b:0;s:5:\"chmod\";b:0;s:5:\"purge\";b:0;}s:10:\"meta.watch\";a:1:{s:12:\"toggle_watch\";b:0;}s:11:\"conf.serial\";a:1:{s:13:\"get_bookmarks\";b:0;}s:8:\"conf.sql\";a:1:{s:13:\"get_bookmarks\";b:0;}s:12:\"index.lucene\";a:1:{s:5:\"index\";b:0;}s:12:\"action.share\";a:6:{s:5:\"share\";b:0;s:17:\"share-edit-shared\";b:0;s:22:\"share-folder-workspace\";b:0;s:19:\"share-file-minisite\";b:0;s:24:\"share-selection-minisite\";b:0;s:28:\"share-folder-minisite-public\";b:0;}s:8:\"gui.ajax\";a:1:{s:8:\"bookmark\";b:0;}s:11:\"auth.serial\";a:1:{s:11:\"pass_change\";b:0;}s:8:\"auth.sql\";a:1:{s:11:\"pass_change\";b:0;}}}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475809087),('MINISITE_NODOWNLOAD','O:9:\"AJXP_Role\":8:{s:12:\"\0*\0groupPath\";N;s:9:\"\0*\0roleId\";s:19:\"MINISITE_NODOWNLOAD\";s:7:\"\0*\0acls\";a:0:{}s:13:\"\0*\0parameters\";a:1:{s:19:\"AJXP_REPO_SCOPE_ALL\";a:1:{s:9:\"core.conf\";a:1:{s:17:\"ROLE_DISPLAY_NAME\";s:28:\"Minisite Users - No Download\";}}}s:10:\"\0*\0actions\";a:1:{s:22:\"AJXP_REPO_SCOPE_SHARED\";a:1:{s:9:\"access.fs\";a:4:{s:8:\"download\";b:0;s:14:\"download_chunk\";b:0;s:16:\"prepare_chunk_dl\";b:0;s:12:\"download_all\";b:0;}}}s:14:\"\0*\0autoApplies\";a:0:{}s:8:\"\0*\0masks\";a:0:{}s:14:\"\0*\0lastUpdated\";i:0;}',1475809087);
 /*!40000 ALTER TABLE `ajxp_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -442,6 +442,14 @@ CREATE TABLE `ajxp_simple_store` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `ajxp_simple_store`
+--
+
+LOCK TABLES `ajxp_simple_store` WRITE;
+/*!40000 ALTER TABLE `ajxp_simple_store` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ajxp_simple_store` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `ajxp_user_bookmarks`
@@ -482,8 +490,18 @@ CREATE TABLE `ajxp_user_prefs` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `val` blob,
   PRIMARY KEY (`rid`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ajxp_user_prefs`
+--
+
+LOCK TABLES `ajxp_user_prefs` WRITE;
+/*!40000 ALTER TABLE `ajxp_user_prefs` DISABLE KEYS */;
+INSERT INTO `ajxp_user_prefs` VALUES (1,'admin','AJXP_WEBDAV_DATA','$phpserial$a:1:{s:3:\"HA1\";s:32:\"cbcd4467360788acc272fd0bf53c2528\";}');
+/*!40000 ALTER TABLE `ajxp_user_prefs` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `ajxp_user_rights`
@@ -559,7 +577,7 @@ CREATE TABLE `ajxp_users` (
 
 LOCK TABLES `ajxp_users` WRITE;
 /*!40000 ALTER TABLE `ajxp_users` DISABLE KEYS */;
-INSERT INTO `ajxp_users` VALUES ('admin','sha256:1000:iIXMGiDqOm07EBukueeHbLBxnc0/KI2E:lewIfJkpI8G7ZUmBIIxLRQlKEIhoP7Kg','/');
+INSERT INTO `ajxp_users` VALUES ('admin','sha256:1000:6iuXnFpW1pwwsg2k84h7h4ABibqSP1xx:M8YnTBLDXqz+Pu+OsZp7U9ql6zMvYqup','/');
 /*!40000 ALTER TABLE `ajxp_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -581,7 +599,7 @@ CREATE TABLE `ajxp_version` (
 
 LOCK TABLES `ajxp_version` WRITE;
 /*!40000 ALTER TABLE `ajxp_version` DISABLE KEYS */;
-INSERT INTO `ajxp_version` VALUES (61),(61),(61),(61),(61),(61);
+INSERT INTO `ajxp_version` VALUES (61)
 /*!40000 ALTER TABLE `ajxp_version` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -594,4 +612,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-05 22:58:52
+-- Dump completed on 2016-10-07  2:59:10
